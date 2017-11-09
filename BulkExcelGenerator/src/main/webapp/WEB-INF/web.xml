@@ -1,0 +1,22 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+  	<param-name>DBUSER</param-name>
+  	<param-value>SBBD_IUT</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>DBPWD</param-name>
+  	<param-value>SB5leEsp4</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>DBURL</param-name>
+  	<param-value>jdbc:oracle:thin:@172.31.36.145:1521:SPFTLDB</param-value>
+  </context-param>
+  <listener>
+		<listener-class>com.listener.job.SchedulerManager</listener-class>
+  </listener>
+</web-app>
